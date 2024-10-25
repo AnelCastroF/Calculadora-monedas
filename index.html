@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moneda</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card bg-dark text-white">
+            <div class="card-body">
+                <h2 class="card-title text-center">Moneda</h2>
+                <div class="form-group">
+                    <label for="amount" class="form-label">Monto</label>
+                    <input type="number" class="form-control text-right" id="amount" placeholder="0">
+                </div>
+
+                <div class="form-group">
+                    <label for="fromCurrency" class="form-label">De</label>
+                    <select class="form-control" id="fromCurrency">
+                        <!-- Opciones de moneda se cargarán aquí -->
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="toCurrency" class="form-label">A</label>
+                    <select class="form-control" id="toCurrency">
+                        <!-- Opciones de moneda se cargarán aquí -->
+                    </select>
+                </div>
+
+                <h3 class="text-center my-3" id="result">0</h3>
+
+                <button id="convert" class="btn btn-primary btn-block">Convertir</button>
+
+                <p id="conversionRate" class="text-center mt-2"></p>
+                <p class="text-center">
+                    <a href="#" id="updateRates" class="text-info">Actualizar tipos</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
